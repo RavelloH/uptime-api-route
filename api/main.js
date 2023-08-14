@@ -14,7 +14,7 @@ module.exports = (req, res) => {
         res.writeHead(200, {
             "Content-Type": "application/json",
         });
-        res.write(md.render(response.body));
+        res.write(response.body);
         res.end();
     });
 }
